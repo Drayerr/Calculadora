@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>Calc</title>
+  <meta charset="UTF-8">
+</head>
+  <body>
+      <script src="js/main.js"></script>
+    <div>
+      <input id="caixa" rows="1" type="text">
+    </div>
+    <div class="row">
+      <button class="btn" onclick="OPERAR('c')">C</button>
+      <button class="btn" onclick="OPERAR('.')">+/-</button>
+      <button class="btn" onclick="OPERAR('%')">%</button>
+      <button class="btn" onclick="OPERAR('/')">/</button>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="PRON1(1)">1</button>
+      <button class="btn" onclick="PRON1(2)">2</button>
+      <button class="btn" onclick="PRON1(3)">3</button>
+      <button class="btn" onclick="OPERAR('x')">x</button>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="PRON1(4)">4</button>
+      <button class="btn" onclick="PRON1(5)">5</button>
+      <button class="btn" onclick="PRON1(6)">6</button>
+      <button class="btn" onclick="OPERAR('-')">-</button>
+    </div>
+    <div>
+      <button class="btn" onclick="PRON1(7)">7</button>
+      <button class="btn" onclick="PRON1(8)">8</button>
+      <button class="btn" onclick="PRON1(9)">9</button>
+      <button class="btn" onclick="OPERAR('+')">+</button>
+    </div>
+    <div>
+      <button class="btn" onclick="PRON1(0)">00</button>
+      <button class="btn" onclick="PRON1(0)">0</button>
+      <button class="btn" onclick="">,</button>
+      <button class="btn" onclick="processar()">=</button>
+    </div>
+  </body>
+</html>
