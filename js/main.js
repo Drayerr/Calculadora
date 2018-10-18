@@ -2,7 +2,9 @@ var n1 = '',
   n2 = '',
   RF = '',
   operator = '',
-  compare = 0;
+  compare = 0,
+  caixa = document.getElementById('caixa'),
+  historico = document.getElementById('historico');
 
 function PRON1(x) {
   if (compare == 1) {
@@ -90,7 +92,7 @@ function place(n) {
 
 function clearBox() {
   caixa.value = '';
-  hist.value = '';
+  historico.innerHTML = '';
   n1 = '';
   n2 = '';
 }
@@ -116,8 +118,8 @@ function toDec(x) {
 }
 
 function historic() {
-  RF = Fn1 + operator + Fn2;
-  hist.value = RF;
+  historico.innerHTML = Fn1 + '<span class="operador">' + operator + '</span>' + Fn2;
 }
 
 clearBox();
+historic(); 

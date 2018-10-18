@@ -1,45 +1,51 @@
 <!DOCTYPE html>
+
 <head>
   <title>Calc</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
-      <script src="js/main.js"></script>
+
+<body>
+  
+  <div id="janela">
+    <div id="historico"></div>
     <div>
-      <input id="hist" rows="1" type="text" style="width: 125px; height: 20px; border: 0">
-    </div> 
-    <div>
-      <input id="caixa" rows="1" type="text" style="width: 125px; height: 20px; border: 4">
+      <input id="caixa" class="input-box" rows="1" type="text">
     </div>
     <div class="row">
-      <button class="btn" onclick="clearBox()" style="width: 30px; height: 30px">C</button>
-      <button class="btn" onclick="OPERAR('.')" style="width: 30px; height: 30px">+/-</button>
-      <button class="btn" onclick="OPERAR('%')" style="width: 30px; height: 30px">%</button>
-      <button class="btn" onclick="OPERAR('/')" style="width: 30px; height: 30px">/</button>
+      <button class="btn upperButtons" onclick="clearBox()">C</button>
+      <button class="btn upperButtons" onclick="OPERAR('.')">+/-</button>
+      <button class="btn upperButtons" onclick="OPERAR('%')">%</button>
+      <button class="btn btnDireita" onclick="OPERAR('/')">/</button>
     </div>
     <div class="row">
-      <button class="btn" onclick="PRON1(1)" style="width: 30px; height: 30px">1</button>
-      <button class="btn" onclick="PRON1(2)" style="width: 30px; height: 30px">2</button>
-      <button class="btn" onclick="PRON1(3)" style="width: 30px; height: 30px">3</button>
-      <button class="btn" onclick="OPERAR('x')" style="width: 30px; height: 30px">x</button>
+      <button class="btn centerButtons" onclick="PRON1(7)">7</button>
+      <button class="btn centerButtons" onclick="PRON1(8)">8</button>
+      <button class="btn centerButtons" onclick="PRON1(9)">9</button>
+      <button class="btn btnDireita" onclick="OPERAR('x')">x</button>
     </div>
     <div class="row">
-      <button class="btn" onclick="PRON1(4)" style="width: 30px; height: 30px">4</button>
-      <button class="btn" onclick="PRON1(5)" style="width: 30px; height: 30px">5</button>
-      <button class="btn" onclick="PRON1(6)" style="width: 30px; height: 30px">6</button>
-      <button class="btn" onclick="OPERAR('-')" style="width: 30px; height: 30px">-</button>
+      <button class="btn centerButtons" onclick="PRON1(4)">4</button>
+      <button class="btn centerButtons" onclick="PRON1(5)">5</button>
+      <button class="btn centerButtons" onclick="PRON1(6)">6</button>
+      <button class="btn btnDireita" onclick="OPERAR('-')">-</button>
     </div>
     <div>
-      <button class="btn" onclick="PRON1(7)" style="width: 30px; height: 30px">7</button>
-      <button class="btn" onclick="PRON1(8)" style="width: 30px; height: 30px">8</button>
-      <button class="btn" onclick="PRON1(9)" style="width: 30px; height: 30px">9</button>
-      <button class="btn" onclick="OPERAR('+')" style="width: 30px; height: 30px">+</button>
+      <button class="btn centerButtons" onclick="PRON1(1)">1</button>
+      <button class="btn centerButtons" onclick="PRON1(2)">2</button>
+      <button class="btn centerButtons" onclick="PRON1(3)">3</button>
+      <button class="btn btnDireita" onclick="OPERAR('+')">+</button>
     </div>
     <div>
-      <button class="btn" onclick="PRON0(0)" style="width: 30px; height: 30px">00</button>
-      <button class="btn" onclick="PRON1(0)" style="width: 30px; height: 30px">0</button>
-      <button class="btn" onclick="toDec()" style="width: 30px; height: 30px">,</button>
-      <button class="btn" onclick="processar()" style="width: 30px; height: 30px">=</button>
+      <button class="btn centerButtons" onclick="PRON0(0)">00</button>
+      <button class="btn centerButtons" onclick="PRON1(0)">0</button>
+      <button class="btn centerButtons" onclick="toDec()">,</button>
+      <button id="processButton" class="btn btnDireita" onclick="processar()">=</button>
     </div>
-  </body>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
