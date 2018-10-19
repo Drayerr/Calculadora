@@ -1,0 +1,22 @@
+{
+  "name": "Calculadora",
+  "version": "1.0.0",
+  "description": "Calcula",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drayerr/Calculadora.git"
+  },
+  "author": "Drayerr <gabrielgrvmei@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drayerr/Calculadora/issues"
+  },
+  "homepage": "https://github.com/Drayerr/Calculadora#readme",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  }
+}
